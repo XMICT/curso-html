@@ -1,0 +1,75 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(209, 209, 209);
+    background-color: #1a1a1a;
+}
+
+body{
+    margin: 0px;
+}
+
+body > video{
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(54, 54, 54);
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-button{
+    height: 0px;
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.content{
+    margin:0 10%;
+}
+
+.container-video > video{
+    width: 100%;
+}
+
+.container-redes{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-redes > a > img{
+    width: 32px;
+}
+.container-semantica{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 0.5px solid rgb(189, 189, 189);
+    width: 40%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+
+h2, a{
+    color: darkgoldenrod;
+}
+
+:root{
+    --gray:rgb(210, 210, 210)
+}

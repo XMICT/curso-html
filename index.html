@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Norma de caracteres-->
+    <meta charset="UTF-8">
+    <!--Escalabilidad de la pagina-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Autor de la pagina-->
+    <meta name="author" content="Guardiola">
+    <!--Descripcion de la pagina-->
+    <meta name="description" content="Esta es mi primera pagina web">
+    <!--Palabras clave para la busqueda del navegador-->
+    <meta name="keywords" content="desarrollo web, pruebas, xmict">
+    <!--Hoja de estilos-->
+    <link rel="stylesheet" href="/Styles/style.css">
+    <!--Icono que se visualiza en las pestanas-->
+    <link rel="shortcut icon" href="/Assets/astro-icon-light.svg">
+
+    <title>Curso</title>
+</head>
+
+<body>
+    <video src="Assets/prueba-video.mp4" muted autoplay loop></video>
+    <audio src="Assets/prueba-sonido.mp3" autoplay loop muted></audio>
+
+
+    <div class="content">
+        <h1>Aprendiendo HTML</h1>
+
+        <hr>
+
+        <section class="titulos">
+            <h2>Titulos y subtitulos</h2>
+            <p>El manejo de titulos y subtitulos son importantes para el entendimiento del navegador, siendo el H1 el
+                titulo
+                principal, hasta el h6 el subtitulo con menor nivel</p>
+            <h1>Titulo principal</h1>
+            <h2 style="color: rgb(209, 209, 209);">Subtitulo 1</h2>
+            <h3>Subtitulo 2</h3>
+            <h4>Subtitulo 3</h4>
+            <h5>Subtitulo 4</h5>
+            <h6>Subtitulo 5</h6>
+        </section>
+
+        <hr>
+
+        <section class="container-semantica">
+            <h2>Semantica</h2>
+            <p>Html semantico se creo para que el contenido de la pagina sea mas entendible para el navegador y este
+                pueda catalogar la pagina en una mejor posicion en el buscador. Aqui algunos ejemplos de html semantico:
+            </p>
+            <article class="card">
+                <h3>Texto normal</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat natus reprehenderit laboriosam, ut
+                    ea
+                    optio enim, saepe placeat vel tempora neque eius, expedita quos voluptate pariatur error quas
+                    voluptatibus in.</p>
+            </article>
+
+            <article class="card">
+                <h3>Texto en negrita</h3>
+                <p><strong>El texto en negrita significa que su contenido es importante para la relevancia de la
+                        pagina</strong></p>
+            </article>
+
+            <article class="card">
+                <h3>Texto subrayado</h3>
+                <p style="background-color: rgb(66, 77, 72);"><u>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Quo est expedita, pariatur delectus exercitationem vitae laboriosam commodi, non tempore ullam
+                        eos
+                        doloremque aliquid ex mollitia cum modi! Placeat, odio repellat.</u></p>
+            </article>
+
+            <article class="card">
+                <h3>Texto <i style="background-color: rgb(58, 114, 95);">cursiva</i></h3>
+                <p><i style="background-color: rgb(77, 77, 66);">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Quo est expedita, pariatur delectus exercitationem vitae laboriosam commodi, non tempore ullam
+                        eos
+                        doloremque aliquid ex mollitia cum modi! Placeat, odio repellat.</i></p>
+            </article>
+
+            <article class="card">
+                <h3>Citar texto</h3>
+                <p><q cite="https://www.mundifrases.com/tema/caminos/">Aun falta mucho camino pero ya estas mas lejos de
+                        donde empezaste</q> .Yo</p>
+            </article>
+
+            <article class="card">
+                <h3>Enlaces</h3>
+
+                <p><a href="https://www.mundifrases.com/tema/caminos/" target="_blank">Haz click aqui para ver el
+                        contenido</a></p>
+            </article>
+
+            <article class="card">
+                <h3>Enviame un correo :D</h3>
+
+                <p><a href="mailto:carlosguardiola2001@gmail.com">Haz click aqui</a></p>
+            </article>
+
+        </section>
+
+        <hr>
+
+        <section class="container-listas">
+            <h2>Listas</h2>
+            <p>En HTML existen dos tipos de listas, estas se dividen en ordenadas y desordenadas, puedes utilizar la que mejor convenga</p>
+
+            <div class="container-listas"></div>
+
+            <h3>Lista desordenada</h3>
+            <ul>
+                <li>Este</li>
+                <li>Es</li>
+                <li>Un</li>
+                <li>Ejemplo</li>
+                <li>De</li>
+                <li>Una</li>
+                <li>Lista</li>
+                <li>Desordenada</li>
+            </ul>
+
+            <h3>lista ordenada</h3>
+            <ol>
+                <li>Este</li>
+                <li>Es</li>
+                <li>Un</li>
+                <li>Ejemplo</li>
+                <li>De</li>
+                <li>Una</li>
+                <li>Lista</li>
+                <li>Ordenada</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section class="container-imagen">
+            <h2>Imagenes</h2>
+            <p>Demostracion de como insertar una imagen en una pagina</p>
+            <a href="/Assets/img-prueba.jpg"><img src="/Assets/img-prueba.jpg" alt="Descripcion de la imagen" width="100%"></a>
+
+        </section>
+
+        <hr>
+
+        <section class="container-video">
+            <h2>Videos</h2>
+            <p>Otra forma de insertar videos es de la siguiente forma:</p>
+            <video controls muted autoplay >
+                <source src="Assets/prueba-video.mp4" type="video/mp4">
+                <p>Tu navegador no puede reproducir este video <a href="Assets/prueba-sonido.mp3"></a></p>
+            </video>
+        </section>
+
+        <hr>
+
+        <section class="container-audio">
+            <h2>Audio</h2>
+            <p>Demostracion de como insertar un audio en una pagina</p>
+            <audio controls style="width: 100%;" >
+                <source src="Assets/prueba-sonido.mp3">
+            </audio>
+        </section>
+
+    </div>
+    <footer>
+        <p><b>SIGUEME EN MIS REDES SOCIALES</b></p>
+        <div class="container-redes">
+            <a href="https://www.facebook.com/carlos.guardiola.750/" target="_blank"><img src="Assets/facebook.png"
+                    alt="facebook"></a>
+            <a href="https://www.instagram.com/guardiola.prk/" target="_blank"><img src="Assets/instagram.png"
+                    alt="instagram"></a>
+            <a href="https://github.com/" target="_blank"><img src="Assets/github.png" alt="github"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
