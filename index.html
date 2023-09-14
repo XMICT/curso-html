@@ -18,6 +18,24 @@
     <link rel="shortcut icon" href="/Assets/astro-icon-light.svg">
 
     <title>Curso</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+            border: 2px solid gray;
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+        }
+        td{
+            padding: 10px 20px;
+            border: 1px solid rgb(87, 87, 87);
+        }
+        th{
+            padding: 10px 20px;
+            background-color: gray;
+            border: 1px solid rgb(87, 87, 87);
+        }
+    </style>
 </head>
 
 <body>
@@ -109,9 +127,8 @@
             <h2>Listas</h2>
             <p>En HTML existen dos tipos de listas, estas se dividen en ordenadas y desordenadas, puedes utilizar la que mejor convenga</p>
 
-            <div class="container-listas"></div>
-
             <h3>Lista desordenada</h3>
+            <!--Lista desordenada-->
             <ul>
                 <li>Este</li>
                 <li>Es</li>
@@ -123,12 +140,15 @@
                 <li>Desordenada</li>
             </ul>
 
+            <!--Lista ordenada-->
             <h3>lista ordenada</h3>
-            <ol>
+            <ol start="5" type="I" reversed >
                 <li>Este</li>
                 <li>Es</li>
-                <li>Un</li>
-                <li>Ejemplo</li>
+                <ol>
+                    <li>Un</li>
+                    <li>Ejemplo</li>
+                </ol>
                 <li>De</li>
                 <li>Una</li>
                 <li>Lista</li>
@@ -136,6 +156,82 @@
             </ol>
         </section>
 
+        <hr>
+
+        <section class="container-tablas">
+            <h3>Tablas</h3>
+        <hr>
+        <h4>Ejemplo 1</h4>
+        <table>
+            <tr>
+                <td>Item 1</td>
+                <td>Item 2</td>
+                <td>Item 3</td>
+                <td>Item 4</td>
+            </tr>
+            <tr>
+                <td>Item 1</td>
+                <td>Item 2</td>
+                <td>Item 3</td>
+                <td>Item 4</td>
+            </tr>
+        </table>
+        
+        <hr>
+
+        <h4>Ejemplo 2</h4>
+        <table>
+            <colgroup>
+                <col style="background-color: gray;">
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <tr>
+                <th>&nbsp;</th>
+                <th>Carlos</th>
+                <th>Joaquin</th>
+                <th>Pablo</th>
+            </tr>
+            <tr>
+                <td>Edad</td>
+                <td>22</td>
+                <td>22</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Materias</td>
+                <td>Prog web</td>
+                <td>Prog movil</td>
+                <td>Prog escritorio</td>
+            </tr>
+            <tr>
+                <td>Aprobado</td>
+                <td>Si</td>
+                <td>Si</td>
+                <td>Si</td>
+            </tr>
+        </table>
+
+        <hr>
+        </section>
+
+        <hr>
+
+        <section class="container-iframe">
+            <h3>Iframe</h3>
+            <p>Permite incrustar partes de codigo de diversas paginas e interpretarlas desde la pagina</p>
+            <h4>Spotify</h4>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/31nfdEooLEq7dn3UMcIeB5?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+            <h4>Youtube</h4>
+            <iframe style="border-radius:12px" width="100%" height="300" src="https://www.youtube.com/embed/0LELD8uEQ_o?si=RpAxjo0FXZVP1q25&amp;start=32400" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <h4>Maps</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.7833968851232!2d-97.83037252239211!3d22.24829564477397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d7f82cc6617309%3A0x21d3e995c0861cd2!2sFrancia%20704B%2C%20Ferrocarrilera%2C%2089590%20Cd%20Madero%2C%20Tamps.!5e0!3m2!1ses-419!2smx!4v1694717233822!5m2!1ses-419!2smx" width="100%" height="300" style="border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+        
         <hr>
 
         <section class="container-imagen">
